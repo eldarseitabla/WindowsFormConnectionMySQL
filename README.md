@@ -1,13 +1,13 @@
 # WindowsFormConnectionMySQL
-CSharp - Windows Forms - MySQL
+CSharp | Windows Forms | MySQL | Windows Forms .NET
 
 ## Features
 - Show all data from database table
 - Search in table and show
 
-## Techstack
+## Tech stack
 - `C#`
-- Windows Forms
+- Windows Forms .NET
 - .NET Framework 4.8
 - DataGrid
 - NuGet: MySql.Data
