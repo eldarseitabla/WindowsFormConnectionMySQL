@@ -49,11 +49,11 @@ namespace WindowsFormConnectionMySQL
             }
             catch (MySqlException ex)
             {
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show("Error MySQL connection: " + ex.ToString());
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show("Error: " + ex.ToString());
             }
             finally
             {
@@ -89,11 +89,11 @@ namespace WindowsFormConnectionMySQL
             }
             catch (MySqlException ex)
             {
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show("Error MySQL connection: " + ex.ToString());
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show("Error: " + ex.ToString());
             }
             finally
             {
