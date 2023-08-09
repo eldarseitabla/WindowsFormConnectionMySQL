@@ -42,18 +42,18 @@ namespace WindowsFormConnectionMySQL
 
                 mySqlDataAdapter = new MySqlDataAdapter(mySqlCmd);
 
-                // DataSet ds = new DataSet();
-
                 mySqlDataAdapter.Fill(allDataTable);
 
                 dataGridView1.DataSource = allDataTable;
 
             }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.ToString());
-
             }
             finally
             {
@@ -87,11 +87,13 @@ namespace WindowsFormConnectionMySQL
                 dataGridView1.DataSource = searchDataTable;
 
             }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
             catch (Exception ex)
             {
-
                 MessageBox.Show(ex.ToString());
-
             }
             finally
             {
